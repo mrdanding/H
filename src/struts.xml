@@ -18,6 +18,9 @@
                 <!--</action>-->
 
                 <action name="getJson" class="edu.ucsd.H.action.TestJsonAction" method="getJson"/>
+                <action name="getPeopleInfoAction" class="edu.ucsd.H.action.GetPeopleInfoAction" method="getPeopleInfoAction"/>
+                <action name="getLogInfoAction" class="edu.ucsd.H.action.GetLogAction" method="getLogInfoAction"/>
+
 
         </package>
 

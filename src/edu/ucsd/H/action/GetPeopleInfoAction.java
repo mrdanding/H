@@ -25,7 +25,7 @@ public class GetPeopleInfoAction extends BaseAction {
 
         // connect
         for (int i = 0; i < 100; i++) {
-            if (Math.random() < 0.10) {
+            if (Math.random() < 0.04) {
                 System.out.println("kill will happen !!!!!!!");
                 if (personInfoList.get(i).getStatus().equals("1")) {
                     personInfoList.get(i).setStatus("0");
@@ -46,6 +46,11 @@ public class GetPeopleInfoAction extends BaseAction {
                     }
                 }
             }
+        }
+
+        for (int i = 0; i < personInfoList.size(); i++) {
+            personInfoList.get(i).setX("" + (int) (Math.random() * 400));
+            personInfoList.get(i).setY("" + (int) (Math.random() * 400));
         }
 
         System.out.println(personInfoList.size() + "!!!!!");

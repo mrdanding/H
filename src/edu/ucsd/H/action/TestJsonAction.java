@@ -43,8 +43,9 @@ public class TestJsonAction extends BaseAction {
     }
 
     public void getJson() throws IOException {
-        System.out.println("!!!!!!! haha");
+        System.out.println("request happens");
         response.setContentType("text/html;charset=utf-8");
+        response.setHeader("Access-Control-Allow-Origin", "*");
         //response.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
         //JSON在传递过程中是普通字符串形式传递的，这里简单拼接一个做测试
